@@ -1,0 +1,50 @@
+body{
+    background-color:#F7ECDE;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header .container h1{
+    position: relative;
+    font-family: 'Pacifico','cursive';
+    width: 20%;
+    margin: auto;
+    letter-spacing: 0.2rem;
+}
+
+.header .container h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 110%;
+    height: 40%;
+    background-color: #FEC260;
+    z-index: -99;
+    transition:all 0.25s;
+}
+
+.header .container h1:hover::after{
+  height: 70%;
+}
+
+.header .container .line{
+    width: 100%;
+    border: dotted 2px black;
+    margin-top: 60px;
+}
+
+.header .container h2{
+    font-family:'Righteous','cursive' ;
+    color: #3FA65C;
+}
+
+.header .container button{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

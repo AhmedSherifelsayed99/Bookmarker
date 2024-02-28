@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC:wght@400;700&family=Pacifico&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC:wght@400;700&family=Cedarville+Cursive&family=Pacifico&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC:wght@400;700&family=Cedarville+Cursive&family=Pacifico&family=Righteous&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container py-5">
+            <h1 class="fw-bold text-center fs-1">Bookmarker</h1>
+            <div class="line"></div>
+            <h2 class="text-center py-5">
+                <i class="fa fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa fa-solid fa-bookmark"></i>
+            </h2>
+            <label for="siteName" class="fw-bolder fs-5">
+                <i class="fa fa-solid fa-book-bookmark pe-2"></i>
+                Site Name
+            </label>
+            <input type="text" id="siteName" class="form-control mt-2" placeholder="Bookmark Name">
+        ,<label for="siteURL" class="fw-bolder fs-5 mt-3">
+            <i class="fa fa-solid fa-link pe-2"></i>
+            Site URL
+        </label>
+        <input type="url" id="siteURL" class="form-control mt-2" placeholder="Website URL">
+        <button class="btn btn-danger px-5 my-4" onclick='addSite()'>Submit</button>
+        <div class="line"></div>
+        <table class="table text-center my-3">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <a>
+                    <th>Visit</th>
+                    </a>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
